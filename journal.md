@@ -1,17 +1,20 @@
-# Journal de bord du projet encadré
-
-## Premier devoir pour le 02/10/2024 : 
-
--Pour le travaille de la semaine dernière lorsqu'il fallait trier le dossier que vous nous aviez donné , au début ça allait car je n'ai pas eu de problème spécifique pour créer les nouveaux dossiers via le terminale avec la commande mkdir , en tout cas jusque là tout allait bien... MAIS ! Viens le moment où je dois déplacer les fichiers dans leurs bon dossiers respectif... Au début je n'y arrivais pas , et en faite je ne m'était pas rendu compte que c'est à cause du fait que j'écrivais mal la commande j'ai réussi à corriger cette erreur grâce à une camarades qui me l'a signaler; Heureusement ! ^o^ 
-- Mais.. ce n'était pas la fin. Après avoir presque fini et avoir fait 6 million de fois la commande ls pour à chaque fois vérifie que tout était au bonne endroit (désolé pour les 424 ligne a lire -_-"), qu'elle fut mn heureuse surprise lorsque je me suis rendue compte que j'avais mal écrit le nom du premiers dossiers là où il y'a tous les autres dossiers ಠ_ಠ , au lieu de le nommer "exercice1" je l'avais nommer "exercie1" et là j'ai cru que j'allais devoir tout refaire, j'essayais comme je pouvais de modifier le nom du dossier mais à chaque fois ça créait juste un sous dossier "exercice1" vide dans le dossier "exercie1" -.- .
-Heureusement que l'un de mes amis un peu meilleur que moi m'a expliquer comment faire et j'ai donc pu finalement changer le nom du dossier sans avoir à tout refaire ^_^ . 
-Finalement, j'ai pu tout finir, vient le moment où il faut faire la commande "history" et là à ma grande surprise ma camarade qui était sur Linux arrivais à avoir toutes les commandes qu'elle avait effectué et moi sur Mac lorsque je mettais la commande je n'avais qu'un certain nombre de commandes (une quinzaine à partir de la dernière et en allant plus haut , j'ai un peu paniquer et en essayant tout sorte de combine par hasard j'ai écrit "history1" et là... ça a marché!! ^o^ 
+#Journal de bord du projet encadré
 
 
+## Premier devoir pour le 02/10/2024 :
 
-## Devoirs pour la séance 09/10/24 : 
 
-- Alors jusqu'ici j'ai suivi à la lettre les instructions de la fiche d'exercice et tout c'est relativement bien passé jusqu'ici , j'avoue qu'au début j'avais beaucoup de mal à comprendre comment marche GitHub (et je pense que j'ai encore beaucoup de chose à comprendre surtout par rapport à push et pull . En plus, avant de pouvoir écrire et modifier le journal sur mon ordinateur, je ne sais pas ce qu'il c'est passé mais lorsque j'allais dans mon dossier sur ordinateur je n'arrivais pas à voir le journal et lorsque je mettais la commande "git status", ça me mettais "up to date donc je ne comprenais pas vraiment ce qu'il se passais. Ensuite j'ai effectué la commande git pull juste pour voir ce que ça allait faire et finalement grâce à cela le journal est apparu dans ma machine. Par contre en testant une autre commande qui est git commit j'ai eu le message d'erreurs suivant et je ne sais pas trop comment y remédier : 
+	•	La tâche de la semaine dernière consistait à trier le dossier que vous nous aviez donné. Au début, tout se passait bien : je n'ai pas rencontré de difficultés pour créer les nouveaux dossiers via le terminal en utilisant la commande mkdir. Mais le vrai défi est apparu au moment de déplacer les fichiers dans leurs dossiers respectifs! Après quelques essais infructueux, j'ai compris que le problème venait d'une erreur dans la commande que j'avais saisie. Heureusement, une camarade m'a fait remarquer mon erreur, et j'ai pu la corriger. ^o^
+
+	•	Cependant, un autre souci est survenu. Après avoir utilisé la commande ls à de nombreuses reprises pour vérifier que tout était au bon endroit (désolé pour les longues lignes à lire -.-" ), j'ai découvert que j'avais mal écrit le nom du dossier principal. Au lieu de "exercice1", j'avais écrit "exercie1". J'ai pensé un instant que je devrais tout refaire ಠ_ಠ. Après quelques tentatives, où je créais sans le vouloir un sous-dossier "exercice1" vide -.-, un ami plus expérimenté m'a aidé à résoudre le problème en me montrant comment modifier correctement le nom du dossier sans perdre mon travail, j'ai donc pu finalement changer le nom du dossier sans avoir à tout refaire ^o^ . 
+
+	•	Une fois tout cela terminé, j'ai lancé la commande history, mais j'ai remarqué que, contrairement à une camarade sur Linux qui pouvait voir toutes ses commandes, je n'avais accès qu'aux quinze dernières sur mon Mac. Cela m'a un peu inquiété.Après quelques tests et par hasard, j'ai essayé la commande "history1", qui a miraculeusement fonctionné ! ^o^ J'ai été soulagée de voir enfin l'historique complet de mes commandes.
+
+
+## Devoirs pour la séance du 09/10/2024 :
+
+
+	•	Jusqu'à présent, j'ai suivi les instructions de la fiche d'exercice et tout s'est globalement bien déroulé. Cependant, j'avoue que j'ai eu du mal à comprendre le fonctionnement de GitHub, notamment en ce qui concerne les commandes push et pull. En plus de cela, avant de pouvoir écrire et modifier mon journal sur mon ordinateur, je ne voyais pas le fichier de journal dans mon dossier. Pourtant, en tapant la commande git status, j'avais le message "up to date". Cela m'a laissé perplexe. Finalement, après avoir exécuté la commande git pull, le journal est apparu sur ma machine. Par contre en testant une autre commande qui est git commit j'ai eu le message d'erreurs suivant et je ne sais pas trop comment y remédier : 
 
 git commit
 Author identity unknown
@@ -25,10 +28,12 @@ Run
 
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
-
 fatal: unable to auto-detect email address (got 'oumayachelbi@MBP-de-Oumaya.(none)')
 
 - et lorsque j'ai mit mon email le terminale n'a pas compris : oumayachelbi@gmail.com
 zsh: command not found: oumayachelbi@gmail.com
 
-- Et aussi j'ai pas trop compris qu'elles sont les fichiers Mac inutiles à ignorer, j'ai pas trop compris ? ^.^" 
+- Mais finalement j’ai compris qu’il fallait reprendre les commandes donné : git config --global user.email "you@example.com"
+  git config --global user.name "Your Name" , en remplaçant avec mes informations. 
+
+- Pour les fichiers Mac inutiles à ignorer, je ne l’ai pas encore fait car je n’ai pas encore très bien compris ce qu’il faut faire mais donc j’essayerai de le faire d’ici la semaine prochaine  ^.^" 
