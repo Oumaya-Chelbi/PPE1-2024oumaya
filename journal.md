@@ -40,3 +40,5 @@ zsh: command not found: oumayachelbi@gmail.com
 
 # Séance 3 
 ## exercices git
+ereurerueruerueruerueurueruerueruerueruereureurer
+erueereeueeureueruereuereuerrueur
