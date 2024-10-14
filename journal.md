@@ -40,6 +40,22 @@ zsh: command not found: oumayachelbi@gmail.com
 
 # Séance 3 
 ## exercices git
+<<<<<<< HEAD
 ereurerueruerueruerueurueruerueruerueruereureurer
 erueereeueeureueruereuereuerrueur
 cette ligne doit rester après correction
+=======
+>>>>>>> parent of 6c83915 (I AM ERROR)
+
+je ne sais pas ce qu'il c'est passé mais lorsque j'ai fait git revert , le terminale m'a affiché un messge d'erreur : MBP-de-Oumaya:PPE1-2024oumaya oumayachelbi$ git revert 6c8391564ba90cb3491015fb2aba0bfa03912af1
+Auto-merging journal.md
+CONFLICT (content): Merge conflict in journal.md
+error: could not revert 6c83915... I AM ERROR
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+MBP-de-Oumaya:PPE1-2024oumaya oumayachelbi$ 
+je ne comprend pas commment remédier à cela sachant que pour chaque étape j'ai bien fait git add et git commit ?
