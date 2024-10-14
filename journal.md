@@ -37,3 +37,6 @@ zsh: command not found: oumayachelbi@gmail.com
   git config --global user.name "Your Name" , en remplaçant avec mes informations. 
 
 - Pour les fichiers Mac inutiles à ignorer, je ne l’ai pas encore fait car je n’ai pas encore très bien compris ce qu’il faut faire mais donc j’essayerai de le faire d’ici la semaine prochaine  ^.^" 
+
+# Séance 3 
+## exercices git
