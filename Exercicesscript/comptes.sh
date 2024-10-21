@@ -1,9 +1,13 @@
 #!/usr/bin/bash
 
-Annee=$1
+for Annee in 2016 2017 2018
 
-nb_locations=$(cat /Users/oumayachelbi/documents/coursppe1/Exercice1/ann/$Annee/*/*.ann | grep -c 'Location')
-echo "Le nombre de Locations est : $nb_locations" 
+do 
+
+ nb_locations=$(cat /Users/oumayachelbi/documents/coursppe1/Exercice1/ann/$Annee/*/*.ann | grep -c 'Location')
+
+   echo "Année $Annee : Le nombre de Locations est : $nb_locations"
+done 
 
 
 
