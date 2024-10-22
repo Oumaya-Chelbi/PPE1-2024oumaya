@@ -57,3 +57,16 @@ hint: run "git revert --abort".
 MBP-de-Oumaya:PPE1-2024oumaya oumayachelbi$ 
 je ne comprend pas commment remédier à cela sachant que pour chaque étape j'ai bien fait git add et git commit ?
 
+# Exercices des scripts
+## Description de fonctionnement du code de la dèrniere diapo
+
+ Alors voilà ce que j’ai compris du script :
+
+Au début, il y a la ligne #!/usr/bin/bash, qui est là pour dire à l’ordinateur d’utiliser Bash pour tout le reste. Ensuite, le script commence par vérifier si on lui donne bien un seul argument quand on le lance. Il fait ça avec une condition if qui regarde si le nombre d'arguments est différent de 1 (if [ $# -ne 1 ]). Si on ne lui donne pas cet argument, il nous dit juste que "ce programme demande un argument" et arrête tout (exit), un peu comme si le script boudait parce qu’on ne lui a pas donné ce qu’il attendait (-.-") .
+.
+Si on lui donne l'argument qu'il attend (^^ !), cet argument est stocké dans une variable appelée FICHIER_URLS. Ça sera le fichier que le script va analyser. Après on a : OK=0 et NOK=0, qui comptent respectivement les lignes qui ressemblent à des URL valides et celles qui sont..."douteuses".
+- Ensuite, on entre dans une boucle while, et là, le script commence à lire le fichier ligne par ligne. À chaque ligne, il affiche d’abord son contenu pour qu’on puisse voir ce qu'il est en train de vérifier. Puis, il regarde si la ligne ressemble à une URL avec quelque chose comme http:// ou https://. Si c’est le cas, il affiche "ressemble à une URL valide" et augmente 'OK' d'une unité (une URL correcte ! ^o^). Sinon, il dit "ne ressemble pas à une URL valide" et c’est 'NOK' qui grimpe d’un cran (une ligne suspecte -.-).
+
+- Quand le script a fini de lire toutes les lignes, il affiche le nombre total de lignes valides et 'douteuses' avec un message je pense du genre "$OK URLs et $NOK lignes douteuses". ^.^
+
+ps : Par contre j'ai l'impression de pas tout à fait avoir compris à quoi sert le "-r" pour le while read et aussi à quoi ça sert le ^ avant le https parce le "?" je l'ai vu dans le cours de M.Nouvelle et donc je sais à quoi ça sert mais le ^ devant le https je n'est pas trop compris.^.^"
