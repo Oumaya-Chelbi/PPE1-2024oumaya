@@ -70,3 +70,8 @@ Si on lui donne l'argument qu'il attend (^^ !), cet argument est stocké dans un
 - Quand le script a fini de lire toutes les lignes, il affiche le nombre total de lignes valides et 'douteuses' avec un message je pense du genre "$OK URLs et $NOK lignes douteuses". ^.^
 
 ps : Par contre j'ai l'impression de pas tout à fait avoir compris à quoi sert le "-r" pour le while read et aussi à quoi ça sert le ^ avant le https parce le "?" je l'ai vu dans le cours de M.Nouvelle et donc je sais à quoi ça sert mais le ^ devant le https je n'est pas trop compris.^.^"
+
+# Mini Projet
+## réponses à l'exercice 1 :
+
+Aujourd'hui, j'ai appris grâce à cet exercice pourquoi il vaut mieux éviter d'utiliser `cat` pour lire un fichier dans une boucle. En effet, l'utilisation de `cat` peut entraîner une lecture token par token, ce qui complique le traitement des données lorsqu'on souhaite simplement lire le fichier ligne par ligne. En utilisant directement `while read -r line`, je peux traiter chaque ligne entière, ce qui rend le script plus propre et efficace pour manipuler des chaînes de caractères complètes sans séparations inutiles.
